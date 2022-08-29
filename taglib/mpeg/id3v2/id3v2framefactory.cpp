@@ -60,8 +60,8 @@ namespace
 
     for(StringList::ConstIterator it = fields.begin(); it != fields.end(); ++it) {
       String s = *it;
-      int offset = 0;
-      int end = 0;
+      unsigned int offset = 0;
+      unsigned int end = 0;
 
       while(s.length() > offset && s[offset] == '(' &&
             (end = s.find(")", offset + 1)) > offset) {

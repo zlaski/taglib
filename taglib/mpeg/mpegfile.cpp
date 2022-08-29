@@ -582,4 +582,6 @@ long MPEG::File::findID3v2()
 
     position += bufferSize();
   }
+
+  return -1;  // unreachable
 }
