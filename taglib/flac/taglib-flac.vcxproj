@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12FC5BFD-C3DE-4BC7-923F-741881C2B9F8}</ProjectGuid>
+    <RootNamespace>taglib</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="flacfile.h" />
+    <ClInclude Include="flacmetadatablock.h" />
+    <ClInclude Include="flacpicture.h" />
+    <ClInclude Include="flacproperties.h" />
+    <ClInclude Include="flacunknownmetadatablock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="flacfile.cpp" />
+    <ClCompile Include="flacmetadatablock.cpp" />
+    <ClCompile Include="flacpicture.cpp" />
+    <ClCompile Include="flacproperties.cpp" />
+    <ClCompile Include="flacunknownmetadatablock.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3FF36795-E94C-47DC-B98B-80322E30DDB2}</ProjectGuid>
+    <RootNamespace>taglib-ape</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="apefile.h" />
+    <ClInclude Include="apefooter.h" />
+    <ClInclude Include="apeitem.h" />
+    <ClInclude Include="apeproperties.h" />
+    <ClInclude Include="apetag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="apefile.cpp" />
+    <ClCompile Include="apefooter.cpp" />
+    <ClCompile Include="apeitem.cpp" />
+    <ClCompile Include="apeproperties.cpp" />
+    <ClCompile Include="apetag.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ape-tag-format.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

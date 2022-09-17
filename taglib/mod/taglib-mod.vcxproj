@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE66C4F0-6BE6-49AD-86BA-8BA543C50963}</ProjectGuid>
+    <RootNamespace>taglib-mod</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="modfile.h" />
+    <ClInclude Include="modfilebase.h" />
+    <ClInclude Include="modfileprivate.h" />
+    <ClInclude Include="modproperties.h" />
+    <ClInclude Include="modtag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="modfile.cpp" />
+    <ClCompile Include="modfilebase.cpp" />
+    <ClCompile Include="modproperties.cpp" />
+    <ClCompile Include="modtag.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

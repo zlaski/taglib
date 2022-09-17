@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F0144A1-8F1C-4CC2-BD12-BE7D17A8F84C}</ProjectGuid>
+    <RootNamespace>taglib-ogg</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="flac\oggflacfile.h" />
+    <ClInclude Include="oggfile.h" />
+    <ClInclude Include="oggpage.h" />
+    <ClInclude Include="oggpageheader.h" />
+    <ClInclude Include="opus\opusfile.h" />
+    <ClInclude Include="opus\opusproperties.h" />
+    <ClInclude Include="speex\speexfile.h" />
+    <ClInclude Include="speex\speexproperties.h" />
+    <ClInclude Include="vorbis\vorbisfile.h" />
+    <ClInclude Include="vorbis\vorbisproperties.h" />
+    <ClInclude Include="xiphcomment.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="flac\oggflacfile.cpp" />
+    <ClCompile Include="oggfile.cpp" />
+    <ClCompile Include="oggpage.cpp" />
+    <ClCompile Include="oggpageheader.cpp" />
+    <ClCompile Include="opus\opusfile.cpp" />
+    <ClCompile Include="opus\opusproperties.cpp" />
+    <ClCompile Include="speex\speexfile.cpp" />
+    <ClCompile Include="speex\speexproperties.cpp" />
+    <ClCompile Include="vorbis\vorbisfile.cpp" />
+    <ClCompile Include="vorbis\vorbisproperties.cpp" />
+    <ClCompile Include="xiphcomment.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

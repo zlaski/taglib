@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8B6634D-B920-4BA2-9E37-148BBBC6C28F}</ProjectGuid>
+    <RootNamespace>taglib-riff</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="aiff\aifffile.h" />
+    <ClInclude Include="aiff\aiffproperties.h" />
+    <ClInclude Include="rifffile.h" />
+    <ClInclude Include="riffutils.h" />
+    <ClInclude Include="wav\infotag.h" />
+    <ClInclude Include="wav\wavfile.h" />
+    <ClInclude Include="wav\wavproperties.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aiff\aifffile.cpp" />
+    <ClCompile Include="aiff\aiffproperties.cpp" />
+    <ClCompile Include="rifffile.cpp" />
+    <ClCompile Include="wav\infotag.cpp" />
+    <ClCompile Include="wav\wavfile.cpp" />
+    <ClCompile Include="wav\wavproperties.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

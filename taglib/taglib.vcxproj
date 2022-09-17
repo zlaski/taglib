@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3DF747E8-AB1B-443A-AB11-072EE2ED8E21}</ProjectGuid>
+    <RootNamespace>taglib</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="ape\taglib-ape.vcxproj">
+      <Project>{3ff36795-e94c-47dc-b98b-80322e30ddb2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="asf\taglib-asf.vcxproj">
+      <Project>{8264799b-a572-4400-90fd-33711aabf593}</Project>
+    </ProjectReference>
+    <ProjectReference Include="flac\taglib-flac.vcxproj">
+      <Project>{12fc5bfd-c3de-4bc7-923f-741881c2b9f8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="it\taglib-it.vcxproj">
+      <Project>{e820c893-e16f-4fe9-acfb-4d3f95ff246f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mod\taglib-mod.vcxproj">
+      <Project>{ae66c4f0-6be6-49ad-86ba-8ba543c50963}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mp4\taglib-mp4.vcxproj">
+      <Project>{d6708f06-99ea-4b79-b0b0-e97af41aa891}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mpc\taglib-mpc.vcxproj">
+      <Project>{0c302955-db4e-46d5-9b01-13090f79c994}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mpeg\taglib-mpeg.vcxproj">
+      <Project>{9a9ca7d0-c013-4ed4-9800-4e5349faef82}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ogg\taglib-ogg.vcxproj">
+      <Project>{1f0144a1-8f1c-4cc2-bd12-be7d17a8f84c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="riff\taglib-riff.vcxproj">
+      <Project>{d8b6634d-b920-4ba2-9e37-148bbbc6c28f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="s3m\taglib-s3m.vcxproj">
+      <Project>{5817ec7b-a505-4804-925c-9dc92af265ed}</Project>
+    </ProjectReference>
+    <ProjectReference Include="toolkit\taglib-toolkit.vcxproj">
+      <Project>{e58c48c8-2695-4dde-88c7-657b28602090}</Project>
+    </ProjectReference>
+    <ProjectReference Include="trueaudio\taglib-trueaudio.vcxproj">
+      <Project>{27727121-ef85-4eec-b5e0-e30f6d7a14e4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="wavpack\taglib-wavpack.vcxproj">
+      <Project>{abc142c8-4bf2-4410-9bc9-bed6485acee5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xm\taglib-xm.vcxproj">
+      <Project>{62d15459-1bfc-43a9-90da-04d7c173236e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audioproperties.h" />
+    <ClInclude Include="fileref.h" />
+    <ClInclude Include="tag.h" />
+    <ClInclude Include="taglib_export.h" />
+    <ClInclude Include="tagunion.h" />
+    <ClInclude Include="tagutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="taglib_config.h.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audioproperties.cpp" />
+    <ClCompile Include="fileref.cpp" />
+    <ClCompile Include="tag.cpp" />
+    <ClCompile Include="tagunion.cpp" />
+    <ClCompile Include="tagutils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

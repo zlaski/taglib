@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12180B7E-ECBF-4F35-B5E2-9B63B8DA6D7E}</ProjectGuid>
+    <RootNamespace>taglib-bindings</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="c\tag_c.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c\tag_c.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="c\taglib_c.pc.cmake" />
+    <None Include="README" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

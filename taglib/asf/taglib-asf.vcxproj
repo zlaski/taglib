@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8264799B-A572-4400-90FD-33711AABF593}</ProjectGuid>
+    <RootNamespace>taglib-asf</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="asfattribute.h" />
+    <ClInclude Include="asffile.h" />
+    <ClInclude Include="asfpicture.h" />
+    <ClInclude Include="asfproperties.h" />
+    <ClInclude Include="asftag.h" />
+    <ClInclude Include="asfutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asfattribute.cpp" />
+    <ClCompile Include="asffile.cpp" />
+    <ClCompile Include="asfpicture.cpp" />
+    <ClCompile Include="asfproperties.cpp" />
+    <ClCompile Include="asftag.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

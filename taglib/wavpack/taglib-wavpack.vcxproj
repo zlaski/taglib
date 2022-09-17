@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABC142C8-4BF2-4410-9BC9-BED6485ACEE5}</ProjectGuid>
+    <RootNamespace>taglib</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="wavpackfile.h" />
+    <ClInclude Include="wavpackproperties.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wavpackfile.cpp" />
+    <ClCompile Include="wavpackproperties.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

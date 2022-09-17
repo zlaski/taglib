@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{4FC347F1-C7A5-4336-A166-2A32D982A2FF}</UniqueIdentifier>
+      <Extensions>bat;cmd;ps1;cmake;am;in;sh;bash</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mp3;flac;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;y;yy;l;asm;asmx;java;cs</Extensions>
+    </Filter>
+    <Filter Include="Header Files\id3v1">
+      <UniqueIdentifier>{3e5a881c-19c6-4aee-b19f-20c9a963b7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\id3v2">
+      <UniqueIdentifier>{ae23b6a0-e51e-4b91-939f-d9586233a59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\id3v2\frames">
+      <UniqueIdentifier>{8387d86e-bd1f-4884-b544-dd079a4801d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build Files\id3v2">
+      <UniqueIdentifier>{4dfe4656-2f89-4da7-8e43-c6d97b76ab04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\id3v1">
+      <UniqueIdentifier>{eb56db81-2fc6-4fbb-a663-fb874b6bea87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\id3v2">
+      <UniqueIdentifier>{30ca36ba-2f8f-4395-8844-d1484b0105f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\id3v2\frames">
+      <UniqueIdentifier>{e806cd0f-a476-44d8-ba4e-a1b63e5421db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mpegfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpegheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpegproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpegutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xingheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v1\id3v1genres.h">
+      <Filter>Header Files\id3v1</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v1\id3v1tag.h">
+      <Filter>Header Files\id3v1</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2extendedheader.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2footer.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2frame.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2framefactory.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2header.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2synchdata.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\id3v2tag.h">
+      <Filter>Header Files\id3v2</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\attachedpictureframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\chapterframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\commentsframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\eventtimingcodesframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\generalencapsulatedobjectframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\ownershipframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\podcastframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\popularimeterframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\privateframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\relativevolumeframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\synchronizedlyricsframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\tableofcontentsframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\textidentificationframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\uniquefileidentifierframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\unknownframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\unsynchronizedlyricsframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="id3v2\frames\urllinkframe.h">
+      <Filter>Header Files\id3v2\frames</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="id3v2\id3v2.2.0.txt">
+      <Filter>Build Files\id3v2</Filter>
+    </Text>
+    <Text Include="id3v2\id3v2.3.0.txt">
+      <Filter>Build Files\id3v2</Filter>
+    </Text>
+    <Text Include="id3v2\id3v2.4.0-frames.txt">
+      <Filter>Build Files\id3v2</Filter>
+    </Text>
+    <Text Include="id3v2\id3v2.4.0-structure.txt">
+      <Filter>Build Files\id3v2</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mpegfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpegheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpegproperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xingheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v1\id3v1genres.cpp">
+      <Filter>Source Files\id3v1</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v1\id3v1tag.cpp">
+      <Filter>Source Files\id3v1</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2extendedheader.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2footer.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2frame.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2framefactory.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2header.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2synchdata.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\id3v2tag.cpp">
+      <Filter>Source Files\id3v2</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\attachedpictureframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\chapterframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\commentsframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\eventtimingcodesframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\generalencapsulatedobjectframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\ownershipframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\podcastframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\popularimeterframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\privateframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\relativevolumeframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\synchronizedlyricsframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\tableofcontentsframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\textidentificationframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\uniquefileidentifierframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\unknownframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\unsynchronizedlyricsframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+    <ClCompile Include="id3v2\frames\urllinkframe.cpp">
+      <Filter>Source Files\id3v2\frames</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A9CA7D0-C013-4ED4-9800-4E5349FAEF82}</ProjectGuid>
+    <RootNamespace>taglib-mpeg</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="id3v1\id3v1genres.h" />
+    <ClInclude Include="id3v1\id3v1tag.h" />
+    <ClInclude Include="id3v2\frames\attachedpictureframe.h" />
+    <ClInclude Include="id3v2\frames\chapterframe.h" />
+    <ClInclude Include="id3v2\frames\commentsframe.h" />
+    <ClInclude Include="id3v2\frames\eventtimingcodesframe.h" />
+    <ClInclude Include="id3v2\frames\generalencapsulatedobjectframe.h" />
+    <ClInclude Include="id3v2\frames\ownershipframe.h" />
+    <ClInclude Include="id3v2\frames\podcastframe.h" />
+    <ClInclude Include="id3v2\frames\popularimeterframe.h" />
+    <ClInclude Include="id3v2\frames\privateframe.h" />
+    <ClInclude Include="id3v2\frames\relativevolumeframe.h" />
+    <ClInclude Include="id3v2\frames\synchronizedlyricsframe.h" />
+    <ClInclude Include="id3v2\frames\tableofcontentsframe.h" />
+    <ClInclude Include="id3v2\frames\textidentificationframe.h" />
+    <ClInclude Include="id3v2\frames\uniquefileidentifierframe.h" />
+    <ClInclude Include="id3v2\frames\unknownframe.h" />
+    <ClInclude Include="id3v2\frames\unsynchronizedlyricsframe.h" />
+    <ClInclude Include="id3v2\frames\urllinkframe.h" />
+    <ClInclude Include="id3v2\id3v2.h" />
+    <ClInclude Include="id3v2\id3v2extendedheader.h" />
+    <ClInclude Include="id3v2\id3v2footer.h" />
+    <ClInclude Include="id3v2\id3v2frame.h" />
+    <ClInclude Include="id3v2\id3v2framefactory.h" />
+    <ClInclude Include="id3v2\id3v2header.h" />
+    <ClInclude Include="id3v2\id3v2synchdata.h" />
+    <ClInclude Include="id3v2\id3v2tag.h" />
+    <ClInclude Include="mpegfile.h" />
+    <ClInclude Include="mpegheader.h" />
+    <ClInclude Include="mpegproperties.h" />
+    <ClInclude Include="mpegutils.h" />
+    <ClInclude Include="xingheader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="id3v2\id3v2.2.0.txt" />
+    <Text Include="id3v2\id3v2.3.0.txt" />
+    <Text Include="id3v2\id3v2.4.0-frames.txt" />
+    <Text Include="id3v2\id3v2.4.0-structure.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="id3v1\id3v1genres.cpp" />
+    <ClCompile Include="id3v1\id3v1tag.cpp" />
+    <ClCompile Include="id3v2\frames\attachedpictureframe.cpp" />
+    <ClCompile Include="id3v2\frames\chapterframe.cpp" />
+    <ClCompile Include="id3v2\frames\commentsframe.cpp" />
+    <ClCompile Include="id3v2\frames\eventtimingcodesframe.cpp" />
+    <ClCompile Include="id3v2\frames\generalencapsulatedobjectframe.cpp" />
+    <ClCompile Include="id3v2\frames\ownershipframe.cpp" />
+    <ClCompile Include="id3v2\frames\podcastframe.cpp" />
+    <ClCompile Include="id3v2\frames\popularimeterframe.cpp" />
+    <ClCompile Include="id3v2\frames\privateframe.cpp" />
+    <ClCompile Include="id3v2\frames\relativevolumeframe.cpp" />
+    <ClCompile Include="id3v2\frames\synchronizedlyricsframe.cpp" />
+    <ClCompile Include="id3v2\frames\tableofcontentsframe.cpp" />
+    <ClCompile Include="id3v2\frames\textidentificationframe.cpp" />
+    <ClCompile Include="id3v2\frames\uniquefileidentifierframe.cpp" />
+    <ClCompile Include="id3v2\frames\unknownframe.cpp" />
+    <ClCompile Include="id3v2\frames\unsynchronizedlyricsframe.cpp" />
+    <ClCompile Include="id3v2\frames\urllinkframe.cpp" />
+    <ClCompile Include="id3v2\id3v2extendedheader.cpp" />
+    <ClCompile Include="id3v2\id3v2footer.cpp" />
+    <ClCompile Include="id3v2\id3v2frame.cpp" />
+    <ClCompile Include="id3v2\id3v2framefactory.cpp" />
+    <ClCompile Include="id3v2\id3v2header.cpp" />
+    <ClCompile Include="id3v2\id3v2synchdata.cpp" />
+    <ClCompile Include="id3v2\id3v2tag.cpp" />
+    <ClCompile Include="mpegfile.cpp" />
+    <ClCompile Include="mpegheader.cpp" />
+    <ClCompile Include="mpegproperties.cpp" />
+    <ClCompile Include="xingheader.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

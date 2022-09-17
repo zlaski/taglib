@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Build Files">
+      <UniqueIdentifier>{4FC347F1-C7A5-4336-A166-2A32D982A2FF}</UniqueIdentifier>
+      <Extensions>bat;cmd;ps1;cmake;am;in;sh;bash</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mp3;flac;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;y;yy;l;asm;asmx;java;cs</Extensions>
+    </Filter>
+    <Filter Include="Header Files\aiff">
+      <UniqueIdentifier>{630e7498-82a2-477f-9f50-1c0ce5599c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\wav">
+      <UniqueIdentifier>{80294ebf-70af-471d-8568-de562533dfe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aiff">
+      <UniqueIdentifier>{b52fe5e2-65b4-464d-9e7b-559907c6cd91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\wav">
+      <UniqueIdentifier>{e03265d6-4972-4df9-89a0-320d527f1bde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rifffile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="riffutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aiff\aifffile.h">
+      <Filter>Header Files\aiff</Filter>
+    </ClInclude>
+    <ClInclude Include="aiff\aiffproperties.h">
+      <Filter>Header Files\aiff</Filter>
+    </ClInclude>
+    <ClInclude Include="wav\infotag.h">
+      <Filter>Header Files\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="wav\wavfile.h">
+      <Filter>Header Files\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="wav\wavproperties.h">
+      <Filter>Header Files\wav</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rifffile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aiff\aifffile.cpp">
+      <Filter>Source Files\aiff</Filter>
+    </ClCompile>
+    <ClCompile Include="aiff\aiffproperties.cpp">
+      <Filter>Source Files\aiff</Filter>
+    </ClCompile>
+    <ClCompile Include="wav\infotag.cpp">
+      <Filter>Source Files\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="wav\wavfile.cpp">
+      <Filter>Source Files\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="wav\wavproperties.cpp">
+      <Filter>Source Files\wav</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

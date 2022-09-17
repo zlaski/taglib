@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)akibld-lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5817EC7B-A505-4804-925C-9DC92AF265ED}</ProjectGuid>
+    <RootNamespace>taglib-s3m</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="s3mfile.h" />
+    <ClInclude Include="s3mproperties.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="s3mfile.cpp" />
+    <ClCompile Include="s3mproperties.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
