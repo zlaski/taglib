@@ -11,6 +11,9 @@ CMakeFiles/
 *.sln
 *.suo
 *.user
+*.log
+Win32/
+x64/
 .*
 *~
 /CMakeCache.txt
