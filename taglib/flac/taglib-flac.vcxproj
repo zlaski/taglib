@@ -7,6 +7,30 @@
     <ProjectGuid>{12FC5BFD-C3DE-4BC7-923F-741881C2B9F8}</ProjectGuid>
     <RootNamespace>taglib</RootNamespace>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="flacfile.h" />
     <ClInclude Include="flacmetadatablock.h" />

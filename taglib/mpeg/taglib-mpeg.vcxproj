@@ -7,6 +7,30 @@
     <ProjectGuid>{9A9CA7D0-C013-4ED4-9800-4E5349FAEF82}</ProjectGuid>
     <RootNamespace>taglib-mpeg</RootNamespace>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\toolkit;$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v1</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\toolkit;$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v1</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\toolkit;$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v1</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\toolkit;$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v1</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="id3v1\id3v1genres.h" />
     <ClInclude Include="id3v1\id3v1tag.h" />

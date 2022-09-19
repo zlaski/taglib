@@ -7,6 +7,42 @@
     <ProjectGuid>{3DF747E8-AB1B-443A-AB11-072EE2ED8E21}</ProjectGuid>
     <RootNamespace>taglib</RootNamespace>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>copy /y $(ProjectDir)taglib_config.h.cmake $(ProjectDir)taglib_config.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)mpeg\id3v1;$(ProjectDir)xm;$(ProjectDir)it;$(ProjectDir)s3m;$(ProjectDir)mod;$(ProjectDir)riff;$(ProjectDir)ogg\flac;$(ProjectDir)ogg;$(ProjectDir)mpeg\id3v2;$(ProjectDir)mpeg\id3v2\frames;$(ProjectDir)wavpack;$(ProjectDir)riff\wav;$(ProjectDir)ogg\vorbis;$(ProjectDir)trueaudio;$(ProjectDir)ogg\speex;$(ProjectDir)ogg\opus;$(ProjectDir)mpeg;$(ProjectDir)mpc;$(ProjectDir)mp4;$(ProjectDir)flac;$(ProjectDir)asf;$(ProjectDir)ape;$(ProjectDir)riff\aiff;$(ProjectDir)toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>copy /y $(ProjectDir)taglib_config.h.cmake $(ProjectDir)taglib_config.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)mpeg\id3v1;$(ProjectDir)xm;$(ProjectDir)it;$(ProjectDir)s3m;$(ProjectDir)mod;$(ProjectDir)riff;$(ProjectDir)ogg\flac;$(ProjectDir)ogg;$(ProjectDir)mpeg\id3v2;$(ProjectDir)mpeg\id3v2\frames;$(ProjectDir)wavpack;$(ProjectDir)riff\wav;$(ProjectDir)ogg\vorbis;$(ProjectDir)trueaudio;$(ProjectDir)ogg\speex;$(ProjectDir)ogg\opus;$(ProjectDir)mpeg;$(ProjectDir)mpc;$(ProjectDir)mp4;$(ProjectDir)flac;$(ProjectDir)asf;$(ProjectDir)ape;$(ProjectDir)riff\aiff;$(ProjectDir)toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>copy /y $(ProjectDir)taglib_config.h.cmake $(ProjectDir)taglib_config.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)mpeg\id3v1;$(ProjectDir)xm;$(ProjectDir)it;$(ProjectDir)s3m;$(ProjectDir)mod;$(ProjectDir)riff;$(ProjectDir)ogg\flac;$(ProjectDir)ogg;$(ProjectDir)mpeg\id3v2;$(ProjectDir)mpeg\id3v2\frames;$(ProjectDir)wavpack;$(ProjectDir)riff\wav;$(ProjectDir)ogg\vorbis;$(ProjectDir)trueaudio;$(ProjectDir)ogg\speex;$(ProjectDir)ogg\opus;$(ProjectDir)mpeg;$(ProjectDir)mpc;$(ProjectDir)mp4;$(ProjectDir)flac;$(ProjectDir)asf;$(ProjectDir)ape;$(ProjectDir)riff\aiff;$(ProjectDir)toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Command>copy /y $(ProjectDir)taglib_config.h.cmake $(ProjectDir)taglib_config.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)mpeg\id3v1;$(ProjectDir)xm;$(ProjectDir)it;$(ProjectDir)s3m;$(ProjectDir)mod;$(ProjectDir)riff;$(ProjectDir)ogg\flac;$(ProjectDir)ogg;$(ProjectDir)mpeg\id3v2;$(ProjectDir)mpeg\id3v2\frames;$(ProjectDir)wavpack;$(ProjectDir)riff\wav;$(ProjectDir)ogg\vorbis;$(ProjectDir)trueaudio;$(ProjectDir)ogg\speex;$(ProjectDir)ogg\opus;$(ProjectDir)mpeg;$(ProjectDir)mpc;$(ProjectDir)mp4;$(ProjectDir)flac;$(ProjectDir)asf;$(ProjectDir)ape;$(ProjectDir)riff\aiff;$(ProjectDir)toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="ape\taglib-ape.vcxproj">
       <Project>{3ff36795-e94c-47dc-b98b-80322e30ddb2}</Project>
