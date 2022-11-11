@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)akibld-lib.props" />
+    <Import Project="..\taglib-lib.props" />
   </ImportGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{12180B7E-ECBF-4F35-B5E2-9B63B8DA6D7E}</ProjectGuid>
     <RootNamespace>taglib-bindings</RootNamespace>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\taglib\ogg;$(ProjectDir)..\taglib\mpeg\id3v2\frames;$(ProjectDir)..\taglib\mpeg\id3v2;$(ProjectDir)..\taglib\mp4;$(ProjectDir)..\taglib\trueaudio;$(ProjectDir)..\taglib\ogg\speex;$(ProjectDir)..\taglib\wavpack;$(ProjectDir)..\taglib\mpc;$(ProjectDir)..\taglib\ogg\flac;$(ProjectDir)..\taglib\flac;$(ProjectDir)..\taglib\mpeg;$(ProjectDir)..\taglib\ogg\vorbis;$(ProjectDir)..\taglib;$(ProjectDir)..\taglib\asf;$(ProjectDir)..\taglib\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\taglib\ogg;$(ProjectDir)..\taglib\mpeg\id3v2\frames;$(ProjectDir)..\taglib\mpeg\id3v2;$(ProjectDir)..\taglib\mp4;$(ProjectDir)..\taglib\trueaudio;$(ProjectDir)..\taglib\ogg\speex;$(ProjectDir)..\taglib\wavpack;$(ProjectDir)..\taglib\mpc;$(ProjectDir)..\taglib\ogg\flac;$(ProjectDir)..\taglib\flac;$(ProjectDir)..\taglib\mpeg;$(ProjectDir)..\taglib\ogg\vorbis;$(ProjectDir)..\taglib;$(ProjectDir)..\taglib\asf;$(ProjectDir)..\taglib\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\taglib\ogg;$(ProjectDir)..\taglib\mpeg\id3v2\frames;$(ProjectDir)..\taglib\mpeg\id3v2;$(ProjectDir)..\taglib\mp4;$(ProjectDir)..\taglib\trueaudio;$(ProjectDir)..\taglib\ogg\speex;$(ProjectDir)..\taglib\wavpack;$(ProjectDir)..\taglib\mpc;$(ProjectDir)..\taglib\ogg\flac;$(ProjectDir)..\taglib\flac;$(ProjectDir)..\taglib\mpeg;$(ProjectDir)..\taglib\ogg\vorbis;$(ProjectDir)..\taglib;$(ProjectDir)..\taglib\asf;$(ProjectDir)..\taglib\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\taglib\ogg;$(ProjectDir)..\taglib\mpeg\id3v2\frames;$(ProjectDir)..\taglib\mpeg\id3v2;$(ProjectDir)..\taglib\mp4;$(ProjectDir)..\taglib\trueaudio;$(ProjectDir)..\taglib\ogg\speex;$(ProjectDir)..\taglib\wavpack;$(ProjectDir)..\taglib\mpc;$(ProjectDir)..\taglib\ogg\flac;$(ProjectDir)..\taglib\flac;$(ProjectDir)..\taglib\mpeg;$(ProjectDir)..\taglib\ogg\vorbis;$(ProjectDir)..\taglib;$(ProjectDir)..\taglib\asf;$(ProjectDir)..\taglib\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="c\tag_c.h" />
   </ItemGroup>
@@ -44,7 +20,9 @@
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\taglib-headers.vcxproj">
+      <Project>{c960e701-9dff-4d17-ab12-7fda9efed86a}</Project>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

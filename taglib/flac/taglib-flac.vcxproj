@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)akibld-lib.props" />
+    <Import Project="..\..\taglib-lib.props" />
   </ImportGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{12FC5BFD-C3DE-4BC7-923F-741881C2B9F8}</ProjectGuid>
-    <RootNamespace>taglib</RootNamespace>
+    <RootNamespace>taglib-flac</RootNamespace>
+    <ProjectName>taglib-flac</ProjectName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ogg;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="flacfile.h" />
     <ClInclude Include="flacmetadatablock.h" />
@@ -45,7 +22,9 @@
     <ClCompile Include="flacproperties.cpp" />
     <ClCompile Include="flacunknownmetadatablock.cpp" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\taglib-headers.vcxproj">
+      <Project>{c960e701-9dff-4d17-ab12-7fda9efed86a}</Project>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

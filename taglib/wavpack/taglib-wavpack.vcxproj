@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)akibld-lib.props" />
+    <Import Project="..\..\taglib-lib.props" />
   </ImportGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ABC142C8-4BF2-4410-9BC9-BED6485ACEE5}</ProjectGuid>
-    <RootNamespace>taglib</RootNamespace>
+    <RootNamespace>taglib-wavpack</RootNamespace>
+    <ProjectName>taglib-wavpack</ProjectName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\ape;$(ProjectDir)..\mpeg\id3v2;$(ProjectDir)..\mpeg\id3v1;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="wavpackfile.h" />
     <ClInclude Include="wavpackproperties.h" />
@@ -39,7 +16,9 @@
     <ClCompile Include="wavpackfile.cpp" />
     <ClCompile Include="wavpackproperties.cpp" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\taglib-headers.vcxproj">
+      <Project>{c960e701-9dff-4d17-ab12-7fda9efed86a}</Project>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

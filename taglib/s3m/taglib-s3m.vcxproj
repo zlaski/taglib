@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(SolutionDir)akibld-lib.props" />
+    <Import Project="..\..\taglib-lib.props" />
   </ImportGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5817EC7B-A505-4804-925C-9DC92AF265ED}</ProjectGuid>
     <RootNamespace>taglib-s3m</RootNamespace>
+    <ProjectName>taglib-s3m</ProjectName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;_DEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\mod;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;WIN32;NDEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\mod;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;_DEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\mod;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <PreprocessorDefinitions>TAGLIB_STATIC;__AKIBLD__;NDEBUG;_LIB</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\mod;$(ProjectDir)..;$(ProjectDir)..\toolkit;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="s3mfile.h" />
     <ClInclude Include="s3mproperties.h" />
@@ -39,7 +16,9 @@
     <ClCompile Include="s3mfile.cpp" />
     <ClCompile Include="s3mproperties.cpp" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\taglib-headers.vcxproj">
+      <Project>{c960e701-9dff-4d17-ab12-7fda9efed86a}</Project>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
