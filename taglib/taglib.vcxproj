@@ -70,4 +70,7 @@
     <ClCompile Include="tagunion.cpp" />
     <ClCompile Include="tagutils.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\taglib-lib.props" />
+  </ItemGroup>
 </Project>

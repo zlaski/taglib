@@ -11,11 +11,16 @@
   <ItemDefinitionGroup>
     <PreBuildEvent>
       <Command>taglib-headers.bat "$(OutDir)"</Command>
+      <Message>Installing TAGLIB headers . . .</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="taglib-headers.bat" />
     <None Include="taglib-headers.lst" />
+    <None Include="taglib\taglib_config.h.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="taglib-headers.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\svn\akibld\src\akisystems\akibld\akibld-headers.vcxproj">

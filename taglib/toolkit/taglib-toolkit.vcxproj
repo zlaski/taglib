@@ -8,6 +8,11 @@
     <RootNamespace>taglib-toolkit</RootNamespace>
     <ProjectName>taglib-toolkit</ProjectName>
   </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="taglib.h" />
     <ClInclude Include="tbytevector.h" />
