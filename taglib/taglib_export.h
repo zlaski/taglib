@@ -40,4 +40,8 @@
 #define TAGLIB_EXPORT
 #endif
 
+#ifdef __CYGWIN__
+#define sprintf_s snprintf
+#endif
+
 #endif

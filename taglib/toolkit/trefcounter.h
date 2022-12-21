@@ -87,8 +87,8 @@ namespace TagLib
   private:
     volatile int32_t refCount;
 #elif defined(TAGLIB_ATOMIC_WIN)
-    void ref() { InterlockedIncrement(&refCount); }
-    bool deref() { return ! InterlockedDecrement(&refCount); }
+    void ref() { InterlockedIncrement((volatile unsigned long *)&refCount); }
+    bool deref() { return ! InterlockedDecrement((volatile unsigned long *)&refCount); }
     long count() { return refCount; }
   private:
     volatile long refCount;
