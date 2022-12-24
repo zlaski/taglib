@@ -1,6 +1,6 @@
 set(CMAKE_CXX_STANDARD 11)
 
-INCLUDE_DIRECTORIES(
+include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/../taglib
   ${CMAKE_CURRENT_SOURCE_DIR}/../taglib/toolkit
   ${CMAKE_CURRENT_SOURCE_DIR}/../taglib/ape
@@ -28,7 +28,7 @@ INCLUDE_DIRECTORIES(
   ${CMAKE_CURRENT_SOURCE_DIR}/../taglib/xm
 )
 
-SET(test_runner_SRCS
+set(test_runner_SRCS
   main.cpp
   test_list.cpp
   test_map.cpp
@@ -70,11 +70,11 @@ SET(test_runner_SRCS
   test_speex.cpp
 )
 
-INCLUDE_DIRECTORIES(${CPPUNIT_INCLUDE_DIR})
+include_directories(BEFORE ${CppUnit_INCLUDE_DIRS})
 
-ADD_EXECUTABLE(test_runner ${test_runner_SRCS})
-TARGET_LINK_LIBRARIES(test_runner tag ${CPPUNIT_LIBRARIES})
+add_executable(test_runner ${test_runner_SRCS})
+target_link_libraries(test_runner tag ${CppUnit_LIBRARIES})
 
-ADD_TEST(test_runner test_runner)
-ADD_CUSTOM_TARGET(check COMMAND ${CMAKE_CTEST_COMMAND} -V
+add_test(test_runner test_runner)
+add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND} -V
                   DEPENDS test_runner)
