@@ -28,7 +28,7 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/../taglib/xm
 )
 
-set(test_runner_SRCS
+SET(test_runner_SRCS
   main.cpp
   test_list.cpp
   test_map.cpp
@@ -70,11 +70,11 @@ set(test_runner_SRCS
   test_speex.cpp
 )
 
-include_directories(BEFORE ${CppUnit_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(BEFORE ${CppUnit_INCLUDE_DIRS})
 
-add_executable(test_runner ${test_runner_SRCS})
-target_link_libraries(test_runner tag ${CppUnit_LIBRARIES})
+ADD_EXECUTABLE(test_runner ${test_runner_SRCS})
+TARGET_LINK_LIBRARIES(test_runner tag ${CppUnit_LIBRARIES})
 
-add_test(test_runner test_runner)
-add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND} -V
+ADD_TEST(test_runner test_runner)
+ADD_CUSTOM_TARGET(check COMMAND ${CMAKE_CTEST_COMMAND} -V
                   DEPENDS test_runner)
