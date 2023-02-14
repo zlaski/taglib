@@ -1,14 +1,13 @@
-#!/bin/bash
+#!/bin/bash -x
 
 SCRIPT=`basename $0 .sh`
 SCRIPT_DIR=$(realpath $(dirname $0))
-# must delete .build directory to trigger a build    
-test -d $SCRIPT_DIR/.build && exit 0
 
 pushd $SCRIPT_DIR
 
 echo "################### BUILDING $0 ####################"
 
+rm -rf .build || exit 1
 mkdir -p .build || exit 1
 cd .build
 
