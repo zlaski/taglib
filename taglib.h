@@ -1,0 +1,3 @@
+// taglib.vcxproj 
+#pragma once 
+ 

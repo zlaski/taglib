@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(registry:HKEY_CURRENT_USER\SOFTWARE\Akisystems\AKIBLD@Sources)akibld-con.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{933342F8-496F-4EA0-A096-8C28954062FE}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectName).h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectName).cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectName).pre.bat" />
+    <None Include="$(ProjectName).post.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\taglib.vcxproj">
+      <Project>{3df747e8-ab1b-443a-ab11-072ee2ed8e21}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
