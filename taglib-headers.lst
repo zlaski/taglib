@@ -1,4 +1,3 @@
-bindings\c\tag_c.h
 taglib\audioproperties.h
 taglib\fileref.h
 taglib\tag.h
