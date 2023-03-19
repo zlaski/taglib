@@ -167,12 +167,18 @@
     <Filter Include="Source Files\taglib\mpeg\id3v2\frames">
       <UniqueIdentifier>{0f7c3de7-9de5-498b-bb46-792b6f616d4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utf8-cpp">
+      <UniqueIdentifier>{bfc78bae-6893-492c-86ed-2cd990c21ce3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ProjectName).pre.bat">
       <Filter>Build Files</Filter>
     </None>
     <None Include="$(ProjectName).post.bat">
+      <Filter>Build Files</Filter>
+    </None>
+    <None Include="taglib-headers.lst">
       <Filter>Build Files</Filter>
     </None>
   </ItemGroup>
@@ -518,6 +524,15 @@
     </ClInclude>
     <ClInclude Include="taglib\mpeg\id3v2\frames\urllinkframe.h">
       <Filter>Header Files\taglib\mpeg\id3v2\frames</Filter>
+    </ClInclude>
+    <ClInclude Include="ut8-cpp\checked.h">
+      <Filter>Header Files\utf8-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="ut8-cpp\core.h">
+      <Filter>Header Files\utf8-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="ut8-cpp\unchecked.h">
+      <Filter>Header Files\utf8-cpp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>taglib\xm;taglib\wavpack;taglib\trueaudio;taglib\toolkit;taglib\s3m;taglib\riff\wav;taglib\riff\aiff;taglib\riff;taglib\ogg\vorbis;taglib\ogg\speex;taglib\ogg\opus;taglib\ogg\flac;taglib\ogg;taglib\mpeg\id3v2\frames;taglib\mpeg\id3v2;taglib\mpeg\id3v1;taglib\mpeg;taglib\mpc;taglib\mp4;taglib\mod;taglib\it;taglib\flac;taglib\asf;taglib\ape;taglib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>taglib\xm;taglib\wavpack;taglib\trueaudio;taglib\toolkit;taglib\s3m;taglib\riff\wav;taglib\riff\aiff;taglib\riff;taglib\ogg\vorbis;taglib\ogg\speex;taglib\ogg\opus;taglib\ogg\flac;taglib\ogg;taglib\mpeg\id3v2\frames;taglib\mpeg\id3v2;taglib\mpeg\id3v1;taglib\mpeg;taglib\mpc;taglib\mp4;taglib\mod;taglib\it;taglib\flac;taglib\asf;taglib\ape;taglib;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -126,6 +127,9 @@
     <ClInclude Include="taglib\wavpack\wavpackproperties.h" />
     <ClInclude Include="taglib\xm\xmfile.h" />
     <ClInclude Include="taglib\xm\xmproperties.h" />
+    <ClInclude Include="ut8-cpp\checked.h" />
+    <ClInclude Include="ut8-cpp\core.h" />
+    <ClInclude Include="ut8-cpp\unchecked.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(ProjectName).cpp" />
@@ -235,5 +239,6 @@
   <ItemGroup>
     <None Include="$(ProjectName).pre.bat" />
     <None Include="$(ProjectName).post.bat" />
+    <None Include="taglib-headers.lst" />
   </ItemGroup>
 </Project>
