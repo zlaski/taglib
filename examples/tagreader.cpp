@@ -26,9 +26,9 @@
 #include <iomanip>
 #include <stdio.h>
 
-#include <fileref.h>
-#include <tag.h>
-#include <tpropertymap.h>
+#include <taglib/fileref.h>
+#include <taglib/tag.h>
+#include <taglib/tpropertymap.h>
 
 using namespace std;
 

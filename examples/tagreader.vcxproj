@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(registry:HKEY_CURRENT_USER\SOFTWARE\Akisystems\AKIBLD@Sources)akibld-con.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9173CDF-E93D-49C8-872F-48C469678434}</ProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>TAGLIB_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectName).h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectName).cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectName).pre.bat" />
+    <None Include="$(ProjectName).post.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\taglib.vcxproj">
+      <Project>{3df747e8-ab1b-443a-ab11-072ee2ed8e21}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
